@@ -41,4 +41,9 @@ a:hover {
 
 main {
   background-color: #f0f8ff;
+  padding: 20px;
+}
+
+p {
+  margin-top: 6px;
 }
