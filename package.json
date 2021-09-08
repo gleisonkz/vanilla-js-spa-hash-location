@@ -16,5 +16,8 @@
   "license": "MIT",
   "dependencies": {
     "parcel": "^2.0.0-rc.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0"
   }
 }
