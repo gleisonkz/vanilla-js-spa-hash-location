@@ -3,8 +3,8 @@ export async function Home() {
   $div.classList.add("container");
 
   $div.innerHTML = `
-      <section class="page-section">                  
-        <h2>Vanilla JS SPA feito com parcel</h2>
+      <section>                  
+        <h1>Seja bem vindo ao Vanilla JS SPA</h1>
         <p>
           Projeto de demonstração de um SPA feito com o Vanilla JS.
           Utilizando parcel para compilar o código.
