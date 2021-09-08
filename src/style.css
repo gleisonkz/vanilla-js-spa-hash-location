@@ -19,7 +19,8 @@ body {
 aside {
   background-color: rgb(35, 42, 56);
   padding: 20px;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
 }
 
 ul {
@@ -46,4 +47,23 @@ main {
 
 p {
   margin-top: 6px;
+}
+
+.post-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.instagram {
+  content: url(./images/instagram.png);
+}
+.linkedin {
+  content: url(./images/linkedin.svg);
+}
+.youtube {
+  content: url(./images/youtube.png);
+}
+.medium {
+  content: url(./images/medium.svg);
 }
