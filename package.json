@@ -1,0 +1,12 @@
+{
+  "name": "vanilla-js-spa",
+  "version": "1.0.0",
+  "description": "A Simple vanilla-js spa app build with no frameworks and parcel builder",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --detailed-report"
+  },
+  "keywords": [],
+  "author": "Gleison de Almeida",
+  "license": "MIT"
+}
