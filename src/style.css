@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 20vw 1fr;
+}
+
+aside {
+  background-color: rgb(35, 42, 56);
+  padding: 20px;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 2px;
+  font-size: 30px;
+}
+
+a {
+  color: rgb(209, 223, 201);
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+main {
+  background-color: #f0f8ff;
+}
