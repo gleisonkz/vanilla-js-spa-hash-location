@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-primary: #00be92;
+  --color-surface: #fff;
+  --color-background: #f2fbf8;
+  --color-text-on-primary: #fff;
+  --color-text-on-surface: #afb2b3;
+}
+
 html,
 body {
   height: 100%;
@@ -18,7 +26,7 @@ body {
 }
 
 aside {
-  background-color: rgb(35, 42, 56);
+  background-color: var(--color-primary);
   padding: 20px;
   height: 100%;
   min-height: 100vh;
@@ -34,7 +42,7 @@ ul li {
 }
 
 a {
-  color: rgb(209, 223, 201);
+  color: var(--color-text-on-primary);
 }
 
 a:hover {
@@ -42,7 +50,7 @@ a:hover {
 }
 
 main {
-  background-color: #f2fbf8;
+  background-color: var(--color-background);
   padding: 20px;
 }
 
@@ -61,4 +69,7 @@ p {
 }
 .medium {
   content: url(./images/medium.svg);
+}
+.github {
+  content: url(./images/github.svg);
 }
