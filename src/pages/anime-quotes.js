@@ -5,7 +5,6 @@ export async function AnimeQuotes(animeName) {
   $div.classList.add("anime-quotes");
 
   const quotes = await getAnimeQuotes(animeName);
-  console.log(quotes);
 
   const $style = createStyles();
   $div.appendChild($style);
@@ -39,13 +38,13 @@ function createStyles() {
   }
 
   .quote {
-    background-color: #ffffff;
+    background-color: var(--color-surface);
     border-radius: 10px;
     max-width: 300px;
     position: relative;
     padding: 10px;
     padding-top: 20px;
-    color: #afb2b3;
+    color: var(--color-text-on-surface);
     margin-bottom: 20px;
   }
 
@@ -57,8 +56,8 @@ function createStyles() {
     height: 30px;
     font-size: 40px;
     border-radius: 50%;
-    background-color: #00be92;
-    color: #ffffff;
+    background-color: var(--color-primary);
+    color: var(--color-text-on-primary);
     position: absolute;
     top: -18px;
     left: 22px;
