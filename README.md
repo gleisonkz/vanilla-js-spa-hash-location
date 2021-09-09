@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Logo Angular" src=".github/logo.jpeg" width="250px"/>
+  <img alt="Project Logo" src=".github/logo.jpg" width="250px"/>
 </p>
 
 <p align="center"> 
