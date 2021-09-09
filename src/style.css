@@ -9,6 +9,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  font-family: Roboto, HelveticaNeue, Arial, sans-serif;
 }
 
 body {
@@ -41,18 +42,12 @@ a:hover {
 }
 
 main {
-  background-color: #f0f8ff;
+  background-color: #f2fbf8;
   padding: 20px;
 }
 
 p {
   margin-top: 6px;
-}
-
-.post-title {
-  font-size: 20px;
-  margin-bottom: 20px;
-  cursor: pointer;
 }
 
 .instagram {
