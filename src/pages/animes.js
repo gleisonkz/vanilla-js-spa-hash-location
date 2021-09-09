@@ -1,22 +1,24 @@
+import { getAnimes } from "../api";
+
 export async function Animes() {
   const $div = document.createElement("div");
-  $div.classList.add("container");
+  $div.classList.add("anime");
 
-  const API_URL = "https://animechan.vercel.app/api/available/anime";
+  const animes = await getAnimes();
 
-  const response = await fetch(API_URL);
-  const animes = await response.json();
+  const $style = createStyles();
+  $div.appendChild($style);
 
   const $animes = animes.map((title, index) => {
     const id = ++index;
-    const $h1 = document.createElement("h1");
-    $h1.className = "post-title";
-    $h1.innerText = `${id} - ${title}`;
-    $h1.id = title;
+    const $item = document.createElement("p");
+    $item.className = "anime-item";
+    $item.innerHTML = `<span>${id}</span> - <span>${title}</span>`;
+    $item.id = title;
 
-    $h1.addEventListener("click", () => navigateToPostDetail($h1.id));
+    $item.addEventListener("click", () => navigateToPostDetail($item.id));
 
-    return $h1;
+    return $item;
   });
 
   $animes.forEach(($post) => $div.appendChild($post));
@@ -27,4 +29,46 @@ export async function Animes() {
   function navigateToPostDetail(id) {
     window.location.href = `/#anime-quotes/${id}`;
   }
+}
+
+function createStyles() {
+  const $style = document.createElement("style");
+  $style.innerHTML = `
+  .anime{
+    display: grid;
+    row-gap: 20px;
+  }
+
+  .anime-item{
+    font-size: 25px;
+    background-color: var(--color-surface);
+    border-radius: 10px;
+    color: var(--color-text-on-surface);
+    padding: 10px;    
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }  
+
+  .anime-item:hover {
+    color: var(--color-primary);
+  }
+
+  .anime-item span:first-of-type {    
+    font-size: 25px;
+    display: inline-flex;
+    justify-content: center;
+    padding: 5px;
+    width: 60px;
+    border-radius: 9px;
+    background-color: var(--color-primary);;
+    color: var(--color-text-on-primary);; 
+    transition: opacity 0.3s ease;
+  } 
+
+  .anime-item:hover span:first-of-type{  
+    opacity: 0.9;
+  }
+  
+  `;
+  return $style;
 }
