@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A Simple vanilla-js spa app build with no frameworks and parcel builder",
   "scripts": {
-    "start": "parcel ./src/index.html --open",
+    "start": "parcel ./src/index.html --open --no-cache",
     "build": "parcel build ./src/index.html --detailed-report"
   },
   "keywords": [
@@ -14,10 +14,10 @@
   ],
   "author": "Gleison de Almeida",
   "license": "MIT",
-  "dependencies": {
-    "parcel": "^2.0.0-rc.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@parcel/transformer-image": "^2.0.0-rc.0"
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "babel-plugin-transform-html-import-to-string": "^1.0.0",
+    "parcel": "^2.0.0-rc.0"
   }
 }
