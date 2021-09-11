@@ -1,0 +1,35 @@
+.anime-quotes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.quote {
+  background-color: var(--color-surface);
+  border-radius: 10px;
+  max-width: 300px;
+  position: relative;
+  padding: 10px;
+  padding-top: 20px;
+  color: var(--color-text-on-surface);
+  margin-bottom: 20px;
+}
+
+.quote::before {
+  display: flex;
+  justify-content: center;
+  content: "“";
+  width: 30px;
+  height: 30px;
+  font-size: 40px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+  position: absolute;
+  top: -18px;
+  left: 22px;
+}
+
+.character {
+  margin-top: 10px;
+}

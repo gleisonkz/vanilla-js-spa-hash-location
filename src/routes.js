@@ -1,7 +1,7 @@
-import { About } from "./pages/about";
-import { Home } from "./pages/home";
-import { AnimeQuotes } from "./pages/anime-quotes";
-import { Animes } from "./pages/animes";
+import { About } from "./pages/about/about";
+import { AnimeQuotes } from "./pages/animes-quotes/anime-quotes";
+import { Animes } from "./pages/animes/animes";
+import { Home } from "./pages/home/home";
 
 export const ROUTES = {
   home: Home,
