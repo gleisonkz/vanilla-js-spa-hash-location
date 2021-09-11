@@ -3,8 +3,8 @@
 </p>
 
 <p align="center"> 
-  <img alt="Top Language" src="https://img.shields.io/github/languages/top/gleisonkz/vanilla-js-spa?color=3498db&style=for-the-badge">
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gleisonkz/vanilla-js-spa?color=3498db&style=for-the-badge&label=Ultimo%20Commit">   
+  <img alt="Top Language" src="https://img.shields.io/github/languages/top/gleisonkz/vanilla-js-spa-hash-location?color=3498db&style=for-the-badge">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gleisonkz/vanilla-js-spa-hash-location?color=3498db&style=for-the-badge&label=Ultimo%20Commit">   
   <a href="https://github.com/gleisonkz">
     <img alt="Developed by Gleison" src="https://img.shields.io/badge/Developer-Gleison-%3498db?color=3498db&style=for-the-badge&label=Desenvolvedor">
   </a>  
@@ -44,11 +44,15 @@ Deploy efetuado no [Netlify](https://www.netlify.com/) para visualizar: [Clique 
 
 <div align="center">
 
-Projeto de demonstração de um SPA feito com o Vanilla JS. Utilizando parcel para compilar o código.
+Projeto de demonstração de um SPA feito com o Vanilla JS. Utilizando apenas parcel e typescript.
 
-Consumindo a api Animechan para obter os dados dos animes.
+com o intuito de implementar e entender melhor o funcionamento do roteamento de um SPA baseando-se no Window.location utilização do parcel como bundler.
 
-E listar citações de cada personagem de um determinado anime.
+Toda a parte de roteamento foi feita do 0 sem utilização de frameworks.
+
+As páginas também realizam o consumo da api Animechan para obter os dados dos animes.
+
+E listar citações de cada personagem de um determinado anime na página de detalhes.
 
 ---
 
@@ -60,7 +64,7 @@ E listar citações de cada personagem de um determinado anime.
 
 Para executar esse projeto você precisa baixar este repositório, ter o Gerenciador de Pacotes do Node ([`NPM`](https://www.npmjs.com/get-npm)) ou o Gerenciador de Pacotes YARN ([`YARN`](https://yarnpkg.com/getting-started)) instalado.
 
-Abra o prompt de comando no diretório do projeto na pasta <code>vanilla-js-spa</code>, e execute os seguintes códigos:
+Abra o prompt de comando no diretório do projeto na pasta <code>vanilla-js-spa-hash-location</code>, e execute os seguintes códigos:
 
 <details>
   <summary><i>com <b>npm</b></i></summary>
