@@ -1,5 +1,7 @@
 import { getAnimes } from "../../api";
 import styles from "./animes.css";
+import template from "./animes.html";
+import { htmlToElement } from "../../utils";
 
 export async function Animes() {
   const $div = document.createElement("div");
@@ -7,21 +9,17 @@ export async function Animes() {
 
   const animes = await getAnimes();
 
-  const $animes = animes.map((title, index) => {
-    const id = ++index;
-    const $item = document.createElement("p");
-    $item.className = "anime-item";
-    $item.innerHTML = `<span>${id}</span> - <span>${title}</span>`;
-    $item.id = title;
+  animes.forEach((title, index) => {
+    const animeTemplate = template
+      .replace("{{ id }}", ++index)
+      .replace("{{ title }}", title);
 
-    $item.addEventListener("click", () => navigateToPostDetail($item.id));
+    const $anime = htmlToElement(animeTemplate);
+    $anime.addEventListener("click", () => navigateToPostDetail(title));
 
-    return $item;
+    $div.appendChild($anime);
   });
 
-  $animes.forEach(($post) => $div.appendChild($post));
-
-  $div.appendChild = $animes;
   return $div;
 
   function navigateToPostDetail(id) {
