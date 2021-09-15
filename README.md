@@ -44,9 +44,9 @@ Deploy efetuado no [Netlify](https://www.netlify.com/) para visualizar: [Clique 
 
 <div align="center">
 
-Projeto de demonstração de um SPA feito com o Vanilla JS. Utilizando apenas parcel e typescript.
+Projeto de demonstração de um SPA feito com o Vanilla JS. Utilizando apenas parcel e javascript.
 
-com o intuito de implementar e entender melhor o funcionamento do roteamento de um SPA baseando-se no Window.location utilização do parcel como bundler.
+com o intuito de implementar e entender melhor o funcionamento do roteamento de um SPA baseando-se no location.hash.
 
 Toda a parte de roteamento foi feita do 0 sem utilização de frameworks.
 
